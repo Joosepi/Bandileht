@@ -26,3 +26,9 @@ Tutvustasime end üksteisele. Valisime bändi - System Of A Down. Edasi hakkasim
 Tegime Figmat edasi ja alustasime koodi kirjutamisega.
 
 Discography lehte tegi Matis.
+
+Kodulehte tegi Mikhail.
+
+Kevin aitas mõlemat lehte teha.
+
+Kõik proovisid Figmat ka teha.
