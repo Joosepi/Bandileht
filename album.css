@@ -1,0 +1,127 @@
+/* Import base styles */
+@import 'style.css';
+/* Album-specific styles */
+:root {
+    --album-bg: rgba(0, 0, 0, 0.3);
+}
+.album-hero-section {
+    background: url('./bandlive.jpg') center/cover no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+.album-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8),
+        #270303
+    );
+}
+.album-hero-content {
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+.album-hero-content h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 8px;
+}
+.album-hero-content p {
+    color: #ddd;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.album-grid-detailed {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.album-detailed {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    background: var(--album-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    scroll-margin-top: 80px;
+}
+.album-detailed img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.album-detailed img:hover {
+    transform: scale(1.05);
+}
+.album-info {
+    padding: 1rem;
+}
+.album-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-white);
+}
+.album-info p {
+    color: #bbb;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+.track-list {
+    list-style: none;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+}
+.track-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 768px) {
+    .album-detailed {
+        grid-template-columns: 1fr;
+    }
+    .album-detailed img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .album-hero-content h1 {
+        font-size: 3rem;
+    }
+}
+/* Animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px var(--nav-color),
+                     0 0 40px var(--nav-color);
+    }
+    to {
+        text-shadow: 0 0 20px #fff,
+                     0 0 30px #FF4444,
+                     0 0 40px #FF4444,
+                     0 0 50px #FF4444;
+    }
+}
