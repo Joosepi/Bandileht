@@ -1,0 +1,465 @@
+root {
+    --nav-color: #521818;
+    --album-frame: #270303;
+    --text-white: #FFFFFF;
+    --background: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--background);
+    color: var(--text-white);
+    font-family: 'Metal Mania', cursive;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    background-color: var(--nav-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+.nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #FF4444;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    text-align: center;
+    margin: 4rem 0;
+}
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.members {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 4rem 0;
+    background: var(--nav-color);
+}
+.members-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.member {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    position: relative;
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.member:nth-child(even) {
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+}
+.member:nth-child(even) .member-info {
+    direction: ltr;
+}
+.member::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, var(--nav-color) 0%, transparent 100%);
+    opacity: 0.1;
+    z-index: -1;
+}
+.member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+}
+.member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.member-info h2 {
+    font-size: 4rem;
+    color: var(--text-white);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.member-info h3 {
+    font-size: 1.2rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.member-info p {
+    color: #bbb;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+}
+.albums-wrapper {
+    background-color: var(--album-frame);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 4rem 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+.albums {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.albums h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-white);
+}
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.album {
+    position: relative;
+    aspect-ratio: 1;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.album:hover {
+    transform: scale(1.05);
+}
+.album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width: 1024px) {
+    .members {
+        grid-template-columns: 1fr;
+    }
+    .album-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .album-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.hero-section {
+    background: url('./bandgroup.png') center/cover no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7),
+        rgba(82, 24, 24, 0.8)
+    );
+}
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.hero-content p {
+    color: #ddd;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+}
+.footer-wrapper {
+    background: var(--nav-color);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 4rem 0;
+    margin-top: 0;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+}
+.footer-info {
+    color: #ddd;
+}
+.footer-info p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+.social-links {
+    display: flex;
+    gap: 2rem;
+}
+.social-links a {
+    color: var(--text-white);
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+.social-links a:hover {
+    color: #FF4444;
+    transform: translateY(-3px);
+}
+.member:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+}
+.album-grid-detailed {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.album-detailed {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    scroll-margin-top: 80px;
+}
+.album-detailed img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.album-detailed img:hover {
+    transform: scale(1.05);
+}
+.album-info {
+    padding: 1rem;
+}
+.album-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-white);
+}
+.album-info p {
+    color: #bbb;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+.track-list {
+    list-style: none;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+}
+.track-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 768px) {
+    .album-detailed {
+        grid-template-columns: 1fr;
+    }
+    .album-detailed img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+.album-hero-section {
+    background: url('./bandlive.jpg') center/cover no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+.album-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8),
+        rgba(82, 24, 24, 0.9)
+    );
+}
+.album-hero-content {
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+.album-hero-content h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 8px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+.album-hero-content p {
+    color: #ddd;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px var(--nav-color),
+                     0 0 40px var(--nav-color);
+    }
+    to {
+        text-shadow: 0 0 20px #fff,
+                     0 0 30px #FF4444,
+                     0 0 40px #FF4444,
+                     0 0 50px #FF4444;
+    }
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+.section-title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-white);
+    text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+}
+.members-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.member-card {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.member-card:hover {
+    transform: translateY(-10px);
+}
+.member-image {
+    position: relative;
+    overflow: hidden;
+}
+.member-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.member-card:hover .member-image img {
+    transform: scale(1.1);
+}
+.member-info {
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(82, 24, 24, 0.9), rgba(0, 0, 0, 0.8));
+}
+.member-info h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+}
+.member-info .role {
+    color: #FF4444;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-family: 'Metal Mania', cursive;
+}
+.member-info .bio {
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+@media (max-width: 1024px) {
+    .members-content {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+}
