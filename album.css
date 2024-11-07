@@ -66,13 +66,14 @@ a {
 }
 .album-hero-section p {
     color: #ddd;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.8rem;
+    line-height: 1.8;
     font-family: Arial, sans-serif;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    padding: 0 2rem;
 }
 .album-grid-detailed {
     display: grid;
@@ -158,9 +159,9 @@ a {
 
 .discography {
     font-family: 'Metal Mania', cursive;
-    font-size: 6rem;
+    font-size: 8.5rem;
     color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
@@ -171,7 +172,7 @@ a {
     background-color: #3F0303;
 }
 
-/* Add footer styles from index.css */
+
 .footer-wrapper {
     background-color: white
 }
@@ -253,7 +254,21 @@ nav {
     }
 
     .discography {
-        font-size: 3rem;
+        font-size: 4rem;
+        padding: 0 1rem;
+        margin: 1rem 0;
+    }
+
+    .album-hero-section {
+        padding: 4rem 1rem;
+        min-height: auto;
+    }
+
+    .album-hero-section p {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        line-height: 1.6;
+        margin-top: 1rem;
     }
 
     .album-detailed {
@@ -279,5 +294,15 @@ nav {
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .album-hero-section p {
+        font-size: 1.4rem;
+        padding: 0 1.5rem;
+        line-height: 1.6;
+    }
+
+    .album-hero-section {
+        padding: 3rem 1rem;
     }
 }

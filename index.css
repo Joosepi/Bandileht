@@ -72,6 +72,8 @@ padding: 10px;
     background-color: #000000;
     padding: 4rem 2rem;
     width: 100%;
+    margin: 0;
+    position: relative;
 }
 .section-title {
     font-size: 4rem;
@@ -238,8 +240,8 @@ footer{
     justify-content: center;
     position: relative;
     overflow: hidden;
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
 }
 .hero-section::before {
     content: '';
@@ -508,5 +510,41 @@ button[type="submit"]:hover {
             rgba(82, 24, 24, 0.95) 50%,
             rgba(0, 0, 0, 0.98) 100%
         );
+    }
+}
+
+.album-item {
+    text-align: center;
+}
+
+.album-item p {
+    margin-top: 10px;
+    font-family: 'Metal Mania', cursive;
+    font-size: 1.2rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .album-item p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem 1rem;
+    }
+    
+    .members {
+        margin: 0;
+        padding: 2rem 1rem;
+    }
+    
+    .hero-content {
+        margin: 0;
+        padding: 1rem;
     }
 }
