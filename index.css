@@ -124,6 +124,7 @@ padding: 10px;
     font-size: 0.9rem;
     line-height: 1.6;
     font-family: Arial, sans-serif;
+    font-size: larger;
 }
 @media (max-width: 768px) {
     .member-card {
@@ -146,14 +147,17 @@ font-family: 'Metal Mania', cursive;
 color:white;
 flex-wrap: wrap;
 }
+
 .albums-links{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
+
 .h22{
     font-size: 60px
 }
+
 footer{
     background-color: #adadad;
     display: flex;
@@ -169,7 +173,7 @@ footer{
     gap: 2rem;
 }
 .hero-section {
-    background: url('./bandgroup.png') center/cover no-repeat fixed;
+    background: url('media/img/bandgroup.png') center/cover no-repeat fixed;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -226,4 +230,8 @@ footer{
 }
 .copy1{
     font-size: 25px;
+}
+
+.footer-logo {
+    padding-top: 20px;
 }
