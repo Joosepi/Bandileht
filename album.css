@@ -18,6 +18,7 @@ a {
 
 .logo {
     padding: 16px;
+    filter: brightness(0) invert(1);
 }
 
 .links {
@@ -234,4 +235,49 @@ nav {
     font-size: 35px;
     padding: 16px;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        font-size: 24px;
+        padding: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .discography {
+        font-size: 3rem;
+    }
+
+    .album-detailed {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .album-info h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .album-grid-detailed {
+        padding: 2rem 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .social-links {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
