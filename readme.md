@@ -20,7 +20,11 @@ Figma link: https://www.figma.com/design/8kQzBZoQdMiNghAfyZjl1U/Project?node-id=
 
 Tutvustasime end üksteisele. Valisime bändi - System Of A Down. Edasi hakkasime Figmaga tegelema. Tehti ka väike plaan tahvli peale, millest on üleval pilt.
 
+Kodulehe tegi 
+
 
 ## Teine päev 07.11.24
 
 Tegime Figmat edasi ja alustasime koodi kirjutamisega.
+
+Discography
