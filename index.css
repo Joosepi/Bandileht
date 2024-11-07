@@ -1,0 +1,41 @@
+a {
+    text-decoration: none;
+}
+
+.nav{
+    background-color: rgb(115, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+.soc{
+display:  flex;
+font-family: 'Metal Mania', cursive;
+font-size: 27px;
+padding: 16px;
+
+}
+.logo{
+    padding: 16px;
+} 
+.links{
+    font-family: 'Metal Mania', cursive;
+    font-size: 35px;
+    padding: 16px;
+    justify-content: right;
+    
+}
+.int{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 35px;
+
+}
+.parmain{
+font-size: 20px;
+color: black;
+margin-left: 20% ;
+margin-right: 20%;
+}
