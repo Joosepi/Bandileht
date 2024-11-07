@@ -1,51 +1,77 @@
-/* Import base styles */
-@import 'style.css';
-/* Album-specific styles */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #3F0303;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #2E0606;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 16px;
+}
+
+.links {
+    font-family: 'Metal Mania', cursive;
+    font-size: 35px;
+    padding: 16px;
+    justify-content: right;
+}
+
+:root {
+    --text-white: #fff;
+    --nav-color: #2E0606;
+}
+
+
 :root {
     --album-bg: rgba(0, 0, 0, 0.3);
 }
 .album-hero-section {
-    background: url('./bandlive.jpg') center/cover no-repeat;
-    min-height: 60vh;
+    background-color: #3F0303;
+    min-height: 40vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
     padding: 2rem;
-    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 .album-hero-section::before {
     content: '';
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.8),
-        #270303
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 20%,
+        transparent 100%
     );
+    z-index: 0;
 }
-.album-hero-content {
-    max-width: 800px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    padding: 2rem;
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
-}
-.album-hero-content h1 {
-    font-size: 5rem;
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    letter-spacing: 8px;
-}
-.album-hero-content p {
+.album-hero-section p {
     color: #ddd;
     font-size: 1.2rem;
-    line-height: 1.8;
+    line-height: 1.6;
     font-family: Arial, sans-serif;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 .album-grid-detailed {
     display: grid;
@@ -53,17 +79,19 @@
     gap: 4rem;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 4rem 2rem;
+    background-color: #3F0303;
 }
 .album-detailed {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 2rem;
-    background: var(--album-bg);
+    background: rgba(0, 0, 0, 0.3);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     scroll-margin-top: 80px;
+    margin-bottom: 3rem;
 }
 .album-detailed img {
     width: 100%;
@@ -82,6 +110,7 @@
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--text-white);
+    font-family: 'Metal Mania', cursive;
 }
 .album-info p {
     color: #bbb;
@@ -106,26 +135,103 @@
         max-width: 300px;
         margin: 0 auto;
     }
-    .album-hero-content h1 {
-        font-size: 3rem;
+    .album-hero-section p {
+        font-size: 1rem;
     }
 }
-/* Animation */
+
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #fff,
-                     0 0 20px #fff,
-                     0 0 30px var(--nav-color),
-                     0 0 40px var(--nav-color);
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.7),
+                     0 0 10px rgba(255, 255, 255, 0.5),
+                     0 0 15px rgba(255, 68, 68, 0.5),
+                     0 0 20px rgba(255, 68, 68, 0.3);
     }
     to {
-        text-shadow: 0 0 20px #fff,
-                     0 0 30px #FF4444,
-                     0 0 40px #FF4444,
-                     0 0 50px #FF4444;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                     0 0 15px rgba(255, 68, 68, 0.4),
+                     0 0 20px rgba(255, 68, 68, 0.3),
+                     0 0 25px rgba(255, 68, 68, 0.2);
     }
 }
 
 .discography {
-    padding-top: 4rem;
+    font-family: 'Metal Mania', cursive;
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.albums-wrapper {
+    background-color: #3F0303;
+}
+
+/* Add footer styles from index.css */
+.footer-wrapper {
+    background-color: white
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: white;
+    color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: black;
+}
+
+.social-links a {
+    color: black;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FF4444;
+}
+
+nav {
+    background-color: #2E0606;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.nav-links {
+    font-family: 'Metal Mania', cursive;
+    font-size: 35px;
+    padding: 16px;
+    color: white;
 }

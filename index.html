@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 <body class="">
@@ -16,9 +17,9 @@
             </a>
             <div class="links">
                 <a style="color:white" href="index.html">home</a>
-                <a style="color:white" href="">members</a>
+                <a style="color:white" href="index.html#members">members</a>
                 <a style="color:white" href="album.html">albums</a>
-                <a style="color:white" href="#">contact</a>
+                <a style="color:white" href="index.html#contact">contact</a>
             </div>
         </nav>
     </header> 
@@ -100,15 +101,54 @@
         <section id="albums" class="albums">
             <h2 class="h22">albums</h2>
             <div class="albums-links">
-                <a href=""><img src="media/img/alb1.png"></a>
-                <a href=""><img src="media/img/alb2.png"></a>
-                <a href=""><img src="media/img/alb3.png"></a>
-                <a href=""><img src="media/img/alb4.png"></a>
-                <a href=""><img src="media/img/alb5.png"></a>
-                <a href=""><img src="media/img/alb6.png"></a>
+                <a href="album.html#protect-the-land"><img src="media/img/album1.png" alt="Album 1"></a>
+                <a href="album.html#hypnotize"><img src="media/img/album2.png" alt="Album 2"></a>
+                <a href="album.html#mezmerize"><img src="media/img/album3.png" alt="Album 3"></a>
+                <a href="album.html#steal-this-album"><img src="media/img/album4.png" alt="Album 4"></a>
+                <a href="album.html#toxicity"><img src="media/img/album5.png" alt="Album 5"></a>
+                <a href="album.html#system-of-a-down"><img src="media/img/album6.png" alt="Album 6"></a>
             </div>
         </section>
     </main>
+    <section id="contact" class="contact-section">
+        <h1 class="contact-title">CONTACT</h1>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@systemofadown.com">info@systemofadown.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-building"></i>
+                            <span>Columbia Records</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-info">
             <img class="footer-logo" src="media/img/logo.png" alt="">

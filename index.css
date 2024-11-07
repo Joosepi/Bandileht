@@ -7,7 +7,7 @@ a {
 }
 
 .nav{
-    background-color: rgb(115, 0, 0);
+    background-color: #2E0606;
     display: flex;
     justify-content: space-between;
 }
@@ -138,7 +138,7 @@ padding: 10px;
     }
 }
 .albums{
-background-color: rgb(115, 0, 0);
+background-color: #2E0606;
 padding: 20px;
 align-items: center;
 display: flex;
@@ -159,7 +159,7 @@ flex-wrap: wrap;
 }
 
 footer{
-    background-color: #adadad;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-around;
 }
@@ -234,4 +234,152 @@ footer{
 
 .footer-logo {
     padding-top: 20px;
+}
+
+.albums-links a {
+    position: relative;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.albums-links a:hover {
+    transform: scale(1.05);
+}
+
+.albums-links img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section {
+    background-color: #2E0606;
+    padding: 6rem 2rem;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    position: relative;
+}
+
+.contact-title {
+    font-size: 6rem;
+    margin-bottom: 4rem;
+    color: white;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form h3 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #FF4444;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+button[type="submit"] {
+    background: #FF4444;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-family: 'Metal Mania', cursive;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #cc3333;
+    transform: translateY(-2px);
+}
+
+.contact-info {
+    text-align: left;
+}
+
+
+
+.contact-card h3 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: #FF4444;
+}
+
+.contact-item a,
+.contact-item span {
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #FF4444;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-title {
+        font-size: 4rem;
+    }
 }
