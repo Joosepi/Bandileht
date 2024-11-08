@@ -66,7 +66,7 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 3.
 
-4.
+4. Ei sest ülesanne oli piisavalt raske ja huvitav.
 
 5.
 
@@ -84,7 +84,7 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 3.
 
-4.
+4. sain aru kuidas cssiga rohkem tegeleda.
 
 5.
 
@@ -102,7 +102,7 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 3.
 
-4.
+4. Sain aru kuidas cssiga huvitavaid designe teha.
 
 5.
 
