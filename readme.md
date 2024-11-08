@@ -39,3 +39,32 @@ Kõik proovisid Figmat ka teha.
 ## Kolmas päev 08.11.24
 
 Leht ja Figma valmis.
+
+## Küsimused
+
+1. Mikk
+
+2. Joosep
+
+3. Kevin
+
+4. Matis
+
+5. Kätlin
+
+6. Emily
+
+7. Mikhail
+
+8. Volodymyr
+   
+Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
+
+Mikk - Ülesanne sobis küll, kuigi oleks tahtnud ise rohkem programmeerida.
+
+Üks pehme oskus, mida õppisin ja endas arendasin
+
+
+Üks tehniline oskus, mida õppisin ja endas arendasin
+
+
