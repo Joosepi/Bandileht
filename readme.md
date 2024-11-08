@@ -72,7 +72,7 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 6.Jah, sest Figmast hakkas igav.
 
-7.
+7.I was satisfied with the tasks, but I had little time
 
 8.
 
@@ -90,7 +90,7 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 6. Arendasin koostööoskust.
 
-7.
+7.I liked the distribution of responsibilities. I got to know figma a little more when creating the mobile part. 
 
 8.
 
@@ -108,6 +108,6 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 6. Figma kasutamine.
 
-7.
+7. I also learned more about the original form of the СSS
 
 8.
