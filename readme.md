@@ -60,11 +60,54 @@ Leht ja Figma valmis.
    
 Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
-Mikk - Ülesanne sobis küll, kuigi oleks tahtnud ise rohkem programmeerida.
+1. Ülesanne sobis küll, kuigi oleks tahtnud ise rohkem programmeerida.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
 
 Üks pehme oskus, mida õppisin ja endas arendasin
 
+1. Arendasin abistamis ja suhtlemis oskust.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
 
 Üks tehniline oskus, mida õppisin ja endas arendasin
 
+1. Tuletasin uuesti meelde, kuidas CSS töötab ja kuidas Zone-sse veebilehte üles laadida.
 
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
