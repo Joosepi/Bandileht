@@ -38,7 +38,7 @@ Kõik proovisid Figmat ka teha.
 
 ## Kolmas päev 08.11.24
 
-Leht ja Figma valmis.
+Veebileht ja Figma valmis. Koostöö edenes väga hästi. Aitasime noorematel mobiilivaadet teha, nüüd töötab kõik väga hästi.
 
 ## Küsimused
 
