@@ -64,7 +64,7 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 2. Ülesanne sobis mulle väga hästi ja oleksin soovinud rohkem programmeerida.
 
-3.
+3. Ülesanne mis mulle anti sobis vägagi hästi, sain kirjutada nii HTML-i kui ka CSS´i
 
 4. Ei sest ülesanne oli piisavalt raske ja huvitav.
 
@@ -82,7 +82,7 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 2. Õppisin kasutama: Figma auto layout funktsionaalsust, Failide mergemist läbi terminali.
 
-3.
+3. Õppisin veidi rohkem Figmat, et kuidas see töötab. 
 
 4. sain aru kuidas cssiga rohkem tegeleda.
 
@@ -100,7 +100,7 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 2. Sain teadmisi: Terminali kasutamise kohta, HTML-i kiiremaks ühendamiseks veebilehega.
 
-3.
+3. Sain aru, kuidas siduda HTMLi ja CSSi
 
 4. Sain aru kuidas cssiga huvitavaid designe teha.
 
