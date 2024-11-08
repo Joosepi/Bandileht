@@ -68,9 +68,9 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 4. Ei sest ülesanne oli piisavalt raske ja huvitav.
 
-5.
+5. Ja, sest Figma läks tüütuks.
 
-6.
+6.Jah, sest Figmast hakkas igav.
 
 7.
 
@@ -86,9 +86,9 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 4. sain aru kuidas cssiga rohkem tegeleda.
 
-5.
+5. Arendasin suhtlemist ja koostööd.
 
-6.
+6. Arendasin koostööoskust.
 
 7.
 
@@ -104,9 +104,9 @@ Kas oleksid tahtnud täita mingit muud ülesannet selles meeskonnas
 
 4. Sain aru kuidas cssiga huvitavaid designe teha.
 
-5.
+5. Figma kasutamine.
 
-6.
+6. Figma kasutamine.
 
 7.
 
