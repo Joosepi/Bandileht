@@ -2,6 +2,8 @@
 
 Figma link: https://www.figma.com/design/8kQzBZoQdMiNghAfyZjl1U/Project?node-id=0-1&node-type=canvas&t=Hu5lhU4u1jaqqCzb-0
 
+Leht ise: https://system-of-a-down-website.tak22maltis.itmajakas.ee/
+
 
 ### Bändileht - System Of A Down
 
@@ -13,6 +15,7 @@ Figma link: https://www.figma.com/design/8kQzBZoQdMiNghAfyZjl1U/Project?node-id=
 - Kätlin Epelbaum
 - Emily Selge
 - Mikhail Kucherenko
+- Volodymyr Zhuliev
 - Kevin Siim
 - Matis Vaher
 
@@ -34,3 +37,5 @@ Kevin aitas mõlemat lehte teha.
 Kõik proovisid Figmat ka teha.
 
 ## Kolmas päev 08.11.24
+
+Leht ja Figma valmis.
